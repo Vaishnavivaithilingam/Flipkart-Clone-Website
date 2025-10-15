@@ -1,0 +1,256 @@
+*{
+    padding:0;
+    margin:0;
+}
+nav{
+    background-color: #2874f0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+a{
+    text-decoration: none;
+}
+a.hover{
+    text-decoration: underline;
+}
+.plus-color{
+    color:yellow;
+    font-weight: 900;
+}
+.logo p{
+    color: white;
+    position: relative;
+    top:-5px;
+}
+.search{
+    background-color: white;
+    padding: 8px 10px;
+    width: 400px;
+    margin:0px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #2874f0;
+    box-shadow: -7px -7px 10px rgba(0,0,0,0.2),
+     7px 7px 10px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    height: 20px;
+}
+.search input{
+    width: 300px;
+    border:none;
+    outline: none;
+    font-size: 14px;
+}
+.loginbtn{
+    padding: 7px 40px;
+    font-size: 16px;
+    font-weight: 550;
+    border: none;
+    outline: none;
+    color: #2874fe;
+    cursor: pointer;
+}
+.Navlink{
+    margin: 0px 20px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.angledownIcon i{
+    font-size: 10px;
+}
+
+
+/***********recent search**********/
+.RecentSearch{
+    position: absolute;
+    top:50px;
+    background-color: white;
+    width: 420px;
+    margin-left: -11px;
+    height: 350px;
+    box-shadow: -5px 5px 7px rgba(0,0,0,0.2),
+    5px 5px 10px rgba(0,0,0,0.2);
+    border-top: 1px solid #ccc;
+    padding: 8px 1px;
+    display: none;
+}
+.RecentSearch_list{
+    font-size: 15px;
+    display: flex;
+    color: rgb(95, 94, 94);
+}
+.RecentSearch_list p,
+.RecentSearch_list_discover p
+{
+    padding-left: 15px;
+    color: rgb(24, 22, 22);
+}
+.discover{
+    margin: 15px 0px;
+    font-size: 15px;
+    color: rgb(95, 94, 94);
+}
+.RecentSearch_list_discover{
+    padding: 10px 0px;
+    display: flex;
+    color: rgb(95, 94, 94);
+    font-size: 15px;
+}
+.search:focus-within .RecentSearch{
+    display: block;
+}
+
+/****************login****************/
+.hoverlogin{
+    position: absolute;
+    top: 60px;
+    height: 350px;
+    background-color:white;
+    width: 200px;
+    margin-left: -100px;
+    box-shadow: -5px 5px 7px rgba(0,0,0,0.2),
+    5px 5px 10px rgba(0,0,0,0.2);
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 10px;
+    font-weight: 500;
+    color: black;
+    display: none;
+}
+.uppertriangle{
+    height: 0;
+    width: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+    position: relative;
+    top: -12px;
+}
+.Newuser{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+}
+.Newuser a{
+    color: royalblue;
+    text-decoration: none;
+}
+.Newuser a:hover{
+     text-decoration: underline;
+}
+.menulist{
+    display: flex;
+    padding: 15px 0px;
+}
+.menulist p{
+    padding-left: 20px;
+}
+.menulist i{
+    color: #2874f0;
+}
+.loginmenu{
+width: 200px;
+margin-top: 25px;
+}
+.loginbtn:hover .hoverlogin{
+ display: flex;
+ cursor: pointer;
+}
+
+/***************Top Navbar Product***************/
+.topProductNavbar{
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+}
+.topProductNavbar_Nav{
+    width: 80px;
+    height: 112;
+    cursor: pointer;
+    flex: 1;
+}
+.topProductNavbar_Nav img{
+    width: 64px;
+    height: 64px;
+}
+.topProductNavbar_Nav p{
+    font-weight: 510;
+}
+.topProductNavbar_Nav:hover p{
+    color: #2874f0;
+}
+
+/***************Slider****************/
+.slider{
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+.sliderimg{
+    width: 100%;
+   /* padding:0px 10px;*/
+   padding-right: 20px;
+   height: 270px;
+  /* animation: 15s sliderimages infinite;*/
+}
+.Slider_image{
+    display: flex;
+    padding: 0px 10px;
+}
+.btn-container{
+    margin: auto;
+    width: 10px;
+}
+.btn{
+    padding: 35px 15px;
+    background-color: white;
+    font-size: 30px;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.btn-right{
+    left: -35px;
+    position: relative;
+}
+.btn-left{
+    position: relative;
+    z-index: 5; 
+}
+
+
+/***Slider Image Animation***/
+/*@keyframes sliderimages {
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-200%);
+    }
+    60%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-400%);
+    }
+    95%{
+        transform: translateX(-500%);
+    }
+}*/
+
+
+<!--Fashion Best Seller-->
+.Bestseller{
+    background-color: red;
+}
